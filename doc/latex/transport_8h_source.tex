@@ -1,0 +1,20 @@
+\doxysection{transport.\+h}
+\hypertarget{transport_8h_source}{}\label{transport_8h_source}\index{include/transport.h@{include/transport.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//\ include/transport.h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ TRANSPORT\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ TRANSPORT\_H}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Class\ dlya\ planirovki\ perevozokевозок}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTransportScheduler}{TransportScheduler}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{comment}{//\ \ Metod\ dlya\ proverki\ zamknutostiи}}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{bool}\ isClosed(\textcolor{keywordtype}{int}\ supply[],\ \textcolor{keywordtype}{int}\ demand[],\ \textcolor{keywordtype}{int}\ numWarehouses,\ \textcolor{keywordtype}{int}\ numConsumers);}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{comment}{//\ ��Metod\ dlya\ raschetaи}}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordtype}{double}\ calculateCost(\textcolor{keywordtype}{int}\ supply[],\ \textcolor{keywordtype}{int}\ demand[],\ \textcolor{keywordtype}{double}\ costMatrix[][15],\ \textcolor{keywordtype}{int}\ numWarehouses,\ \textcolor{keywordtype}{int}\ numConsumers);}
+\DoxyCodeLine{00012\ \};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
