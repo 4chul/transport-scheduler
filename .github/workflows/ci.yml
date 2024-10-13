@@ -1,0 +1,21 @@
+name: C++ CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up GCC
+      uses: actions/setup-gcc@v2
+      with:
+        gcc-version: 'latest'
+
+    - name: Build
+      run: |
+        g++ -I./include -o transport-scheduler src/main.cpp src/transport.cpp
